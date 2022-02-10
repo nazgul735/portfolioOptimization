@@ -50,3 +50,5 @@ portfolio_volatility = np.sqrt(portfolio_var)
 portfolio_volatility
 
 # annual portfolio return
+
+portfolioAnnualReturns = np.
