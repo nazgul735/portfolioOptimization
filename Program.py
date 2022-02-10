@@ -35,3 +35,18 @@ plt.show()
 
 dailyReturns = df.pct_change()
 dailyReturns
+
+# covariance matrix
+
+annual_cov_matrix = dailyReturns.cov()*252
+annual_cov_matrix
+
+# variance of portfolio
+portfolio_var = np.dot(weight.T, np.dot(annual_cov_matrix, weight))
+portfolio_var
+
+# volatility/stdv
+portfolio_volatility = np.sqrt(portfolio_var)
+portfolio_volatility
+
+# annual portfolio return
